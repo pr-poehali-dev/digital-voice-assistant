@@ -220,7 +220,7 @@ export function LinkBioPage() {
           <ProfileSection
             name="Отвезём Ваш Диван"
             bio="а также доставим Вас в нужное место!"
-            imageUrl="/images/544291433-18043960274659947-5766591717842883293-n.jpg"
+            imageUrl="https://cdn.poehali.dev/projects/7723760b-2e0c-4c26-a70c-9c6b947e8595/files/6019b506-4ff9-4e22-b088-ee00d1c1c2b2.jpg"
           />
         </motion.div>
 
