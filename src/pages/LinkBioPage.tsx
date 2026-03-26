@@ -24,12 +24,6 @@ const links = [
     icon: Phone,
   },
   {
-    title: "Написать в WhatsApp",
-    description: "Отвечу быстро, уточню детали и цену",
-    href: "#",
-    icon: MessageCircle,
-  },
-  {
     title: "Написать в Telegram",
     description: "Удобно отправить адрес или фото груза",
     href: "#",
