@@ -80,7 +80,7 @@ const itemVariants = {
 export function LinkBioPage() {
   return (
     <main className="relative min-h-screen px-6 py-10 flex flex-col overflow-hidden">
-      <div className="fixed inset-0 z-0 bg-gradient-to-br from-blue-50 via-white to-slate-100" />
+      <div className="fixed inset-0 z-0" style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/7723760b-2e0c-4c26-a70c-9c6b947e8595/files/c880a048-637d-4d47-81a3-4ca4ef668eda.jpg')", backgroundSize: "cover", backgroundPosition: "center" }} />
 
       {/* Animated gradient orbs */}
       <motion.div
