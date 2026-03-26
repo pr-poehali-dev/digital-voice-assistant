@@ -218,7 +218,7 @@ export function LinkBioPage() {
       >
         <motion.div variants={itemVariants} className="pt-2">
           <ProfileSection
-            name="Отвезу Ваш Диван"
+            name="Отвезём Ваш Диван"
             bio="Быстро, аккуратно, по доступной цене 🚛🚕"
             imageUrl="/images/544291433-18043960274659947-5766591717842883293-n.jpg"
           />
