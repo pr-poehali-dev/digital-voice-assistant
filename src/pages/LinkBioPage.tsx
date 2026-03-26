@@ -2,45 +2,52 @@ import { motion } from "framer-motion"
 import { ProfileSection } from "@/components/ProfileSection"
 import { LinkCard } from "@/components/LinkCard"
 import { SocialFooter } from "@/components/SocialFooter"
-import { Globe, Youtube, Mail, ShoppingBag, FileText, MessageCircle, Send } from "lucide-react"
+import { Truck, Car, Phone, MessageCircle, Send, MapPin, Mail } from "lucide-react"
 
 const links = [
   {
-    title: "Мой сайт",
-    description: "Портфолио и услуги",
+    title: "Грузоперевозки на прицепе",
+    description: "Мебель, стройматериалы, переезды — быстро и аккуратно",
     href: "#",
-    icon: Globe,
+    icon: Truck,
   },
   {
-    title: "YouTube канал",
-    description: "Видео и туториалы",
+    title: "Легковое такси",
+    description: "Поездки по городу и области — комфортно и вовремя",
     href: "#",
-    icon: Youtube,
+    icon: Car,
   },
   {
-    title: "Магазин",
-    description: "Товары и услуги",
-    href: "#",
-    icon: ShoppingBag,
+    title: "Позвонить сейчас",
+    description: "Принимаю заявки с 7:00 до 22:00",
+    href: "tel:#",
+    icon: Phone,
   },
   {
-    title: "Telegram",
-    description: "Написать напрямую",
+    title: "Написать в WhatsApp",
+    description: "Отвечу быстро, уточню детали и цену",
+    href: "#",
+    icon: MessageCircle,
+  },
+  {
+    title: "Написать в Telegram",
+    description: "Удобно отправить адрес или фото груза",
     href: "#",
     icon: Send,
   },
   {
-    title: "Бесплатные материалы",
-    description: "Шаблоны и гайды",
+    title: "Зона работы",
+    description: "Город и пригород, межгород по договорённости",
     href: "#",
-    icon: FileText,
+    icon: MapPin,
   },
 ]
 
 const socials = [
-  { icon: Send, href: "#", label: "Telegram" },
+  { icon: Phone, href: "tel:#", label: "Телефон" },
   { icon: MessageCircle, href: "#", label: "WhatsApp" },
-  { icon: Mail, href: "#", label: "Email" },
+  { icon: Send, href: "#", label: "Telegram" },
+  { icon: Mail, href: "mailto:#", label: "Email" },
 ]
 
 const containerVariants = {
@@ -73,7 +80,7 @@ const itemVariants = {
 export function LinkBioPage() {
   return (
     <main className="relative min-h-screen px-6 py-10 flex flex-col overflow-hidden">
-      <div className="fixed inset-0 z-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
+      <div className="fixed inset-0 z-0 bg-gradient-to-br from-blue-50 via-white to-slate-100" />
 
       {/* Animated gradient orbs */}
       <motion.div
@@ -211,8 +218,8 @@ export function LinkBioPage() {
       >
         <motion.div variants={itemVariants} className="pt-2">
           <ProfileSection
-            name="GlassLinks"
-            bio="Креативный дизайнер и разработчик"
+            name="Грузоперевозки & Такси"
+            bio="Быстро, аккуратно, по доступной цене 🚛🚕"
             imageUrl="/images/544291433-18043960274659947-5766591717842883293-n.jpg"
           />
         </motion.div>
@@ -226,7 +233,7 @@ export function LinkBioPage() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="pb-2">
-          <SocialFooter socials={socials} copyright="2025 GlassLinks" />
+          <SocialFooter socials={socials} copyright="2026 Грузоперевозки & Такси" />
         </motion.div>
       </motion.div>
     </main>
