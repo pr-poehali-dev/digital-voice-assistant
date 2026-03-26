@@ -225,10 +225,28 @@ export function LinkBioPage() {
         </motion.div>
 
         <motion.div className="space-y-3 py-8" variants={containerVariants}>
-          {links.map((link) => (
-            <motion.div key={link.title} variants={itemVariants}>
-              <LinkCard {...link} />
-            </motion.div>
+          {links.map((link, index) => (
+            <>
+              <motion.div key={link.title} variants={itemVariants}>
+                <LinkCard {...link} />
+              </motion.div>
+              {index === 0 && (
+                <motion.div
+                  key="promo-text"
+                  variants={itemVariants}
+                  className="rounded-[20px] px-5 py-4 text-[13px] leading-relaxed text-gray-700"
+                  style={{
+                    background: "rgba(255, 255, 255, 0.45)",
+                    backdropFilter: "blur(40px) saturate(180%)",
+                    WebkitBackdropFilter: "blur(40px) saturate(180%)",
+                    border: "1px solid rgba(255, 255, 255, 0.5)",
+                    boxShadow: "inset 0 1px 1px rgba(255,255,255,0.9), 0 4px 16px rgba(0,0,0,0.06)",
+                  }}
+                >
+                  Хотите разово перевезти мебель или технику в пределах города или на более дальнее расстояние? Зачем переплачивать грузовым такси с почасовой оплатой, когда можно сэкономить, осуществив перевозку при помощи легкового прицепа? Свяжитесь с нами — наши цены более приемлемы! По возможности поможем с физической транспортировкой!
+                </motion.div>
+              )}
+            </>
           ))}
         </motion.div>
 
